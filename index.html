@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#080d16" />
+  <meta name="description" content="Nexus Guild is a fictional gaming-community landing-page portfolio demo, featuring squads, events and a non-submitting join form." />
+  <title>NEXUS GUILD — Find Your People. Own The Night.</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="site-shell">
+    <header class="site-header" id="top">
+      <div class="wrap header-inner">
+        <a href="#top" class="brand" aria-label="Nexus Guild home">
+          <span class="brand-icon" aria-hidden="true">✦</span><span>NEXUS<span class="brand-cut">/</span>GUILD</span>
+        </a>
+        <nav class="desktop-nav" aria-label="Main navigation">
+          <a href="#about">The Guild</a>
+          <a href="#squads">Squads</a>
+          <a href="#events">Events</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+        <button class="button button-small button-outline header-join" type="button" data-open-join>Join the guild <span aria-hidden="true">↗</span></button>
+        <button class="menu-toggle" type="button" aria-controls="mobile-nav" aria-expanded="false" aria-label="Open navigation menu"><span></span><span></span><span></span></button>
+      </div>
+      <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
+        <a href="#about">The Guild</a><a href="#squads">Squads</a><a href="#events">Events</a><a href="#faq">FAQ</a>
+        <button type="button" class="button button-primary" data-open-join>Join the guild ↗</button>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero wrap" aria-labelledby="hero-title">
+        <div class="hero-left">
+          <div class="eyebrow"><span class="pulse"></span> AN OPEN-WORLD COMMUNITY FOR PLAYERS</div>
+          <h1 id="hero-title">FIND YOUR <span>PEOPLE.</span><br/>OWN THE <span class="highlight">NIGHT.</span></h1>
+          <p class="hero-copy">Late-night raids. Last-second wins. The kind of teammates who become your favorite people. Welcome to your next home base.</p>
+          <div class="hero-actions">
+            <button class="button button-primary" type="button" data-open-join>Find your squad <span aria-hidden="true">↗</span></button>
+            <a class="button button-text" href="#squads">Explore the community <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-bottom">
+            <span class="hero-line"></span>
+            <span>BUILT FOR THE GAME. STAY FOR THE PEOPLE.</span>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Abstract futuristic energy core artwork" role="img">
+          <div class="art-grid"></div><div class="art-orbit art-orbit-one"></div><div class="art-orbit art-orbit-two"></div>
+          <div class="art-orbit art-orbit-three"></div><div class="art-beam art-beam-left"></div><div class="art-beam art-beam-right"></div>
+          <div class="core-halo"></div><div class="art-core"><span class="core-symbol">N</span></div>
+          <div class="art-cross art-cross-one">+</div><div class="art-cross art-cross-two">+</div><div class="art-cross art-cross-three">+</div>
+          <div class="art-label art-label-top">SIGNAL // 001</div><div class="art-label art-label-bottom">CONNECTED / ALWAYS</div>
+          <div class="art-number">01<span>/04</span></div>
+        </div>
+        <div class="hero-border" aria-hidden="true"></div>
+      </section>
+
+      <section class="ticker" aria-label="Community values"><div class="ticker-inner"><span>PLAY TOGETHER</span><b>✦</b><span>LEVEL UP</span><b>✦</b><span>MAKE LEGENDS</span><b>✦</b><span>STAY CONNECTED</span><b>✦</b><span>PLAY TOGETHER</span><b>✦</b><span>LEVEL UP</span></div></section>
+
+      <section class="section about wrap" id="about" aria-labelledby="about-heading">
+        <div class="section-head"><p class="section-label">01 / THE MISSION</p><h2 id="about-heading">MORE THAN <em>A GAME.</em></h2></div>
+        <div class="about-grid">
+          <div class="about-lead"><p>Every great match starts with a squad that gets you. Nexus Guild is a fictional gaming-community concept designed around connection, competition and memorable nights online.</p><span class="small-note">PORTFOLIO CONCEPT · NOT AN ACTIVE COMMUNITY</span></div>
+          <div class="about-features">
+            <article><span class="feature-icon">◎</span><h3>Real connections</h3><p>Find people who match your energy, your timezone, and your favorite way to play.</p></article>
+            <article><span class="feature-icon">◇</span><h3>Every skill level</h3><p>From your first queue to endgame content, there is room to grow here.</p></article>
+            <article><span class="feature-icon">↗</span><h3>Better together</h3><p>Game nights, shared goals and the occasional glorious last-second clutch.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section squads-section" id="squads" aria-labelledby="squads-heading">
+        <div class="wrap">
+          <div class="section-head section-head-flex"><div><p class="section-label">02 / FIND YOUR ROLE</p><h2 id="squads-heading">CHOOSE YOUR <em>SQUAD.</em></h2></div><p class="section-summary">Different games. One home base.<br/>Filter by what you love.</p></div>
+          <div class="filter-row" role="group" aria-label="Filter squads by category">
+            <button class="filter active" type="button" data-filter="all" aria-pressed="true">All squads <span>04</span></button>
+            <button class="filter" type="button" data-filter="rpg" aria-pressed="false">RPG & fantasy</button>
+            <button class="filter" type="button" data-filter="competitive" aria-pressed="false">Competitive</button>
+            <button class="filter" type="button" data-filter="casual" aria-pressed="false">Casual & co-op</button>
+          </div>
+          <div class="squad-grid" id="squad-grid">
+            <article class="squad-card squad-violet" data-category="rpg"><div class="card-top"><span>01 / RPG</span><span class="card-arrow" aria-hidden="true">↗</span></div><div class="squad-glyph" aria-hidden="true">✧</div><div class="squad-info"><span class="squad-type">FANTASY / EXPLORATION</span><h3>THE WAYFINDERS</h3><p>Quests, raids, and getting lost on purpose.</p></div></article>
+            <article class="squad-card squad-orange" data-category="competitive"><div class="card-top"><span>02 / PVP</span><span class="card-arrow" aria-hidden="true">↗</span></div><div class="squad-glyph squad-glyph-bolt" aria-hidden="true">ϟ</div><div class="squad-info"><span class="squad-type">RANKED / COMPETITIVE</span><h3>THE VANGUARD</h3><p>Find your duo. Make every round count.</p></div></article>
+            <article class="squad-card squad-blue" data-category="casual"><div class="card-top"><span>03 / CO-OP</span><span class="card-arrow" aria-hidden="true">↗</span></div><div class="squad-glyph" aria-hidden="true">✳</div><div class="squad-info"><span class="squad-type">CHILL / COOPERATIVE</span><h3>AFTER HOURS</h3><p>Low pressure, high laughs, good company.</p></div></article>
+            <article class="squad-card squad-green" data-category="rpg"><div class="card-top"><span>04 / CREATIVE</span><span class="card-arrow" aria-hidden="true">↗</span></div><div class="squad-glyph" aria-hidden="true">⬡</div><div class="squad-info"><span class="squad-type">SANDBOX / CREATION</span><h3>THE BUILDERS</h3><p>Create worlds and share what you make.</p></div></article>
+          </div>
+          <p id="filter-status" class="sr-only" aria-live="polite"></p>
+        </div>
+      </section>
+
+      <section class="section events wrap" id="events" aria-labelledby="events-heading">
+        <div class="section-head section-head-flex"><div><p class="section-label">03 / WHAT'S HAPPENING</p><h2 id="events-heading">ALWAYS <em>IN THE GAME.</em></h2></div><p class="section-summary">Sample event formats for this demo.<br/>No real events are scheduled.</p></div>
+        <div class="event-list">
+          <article class="event-row"><div class="event-index">01</div><div class="event-kind">WEEKLY / CASUAL</div><div class="event-title"><h3>FRIDAY NIGHT QUEUE</h3><p>Jump in, squad up, stay awhile.</p></div><span class="event-tag">COMMUNITY NIGHT</span></article>
+          <article class="event-row"><div class="event-index">02</div><div class="event-kind">MONTHLY / PVP</div><div class="event-title"><h3>THE CLUTCH CLUB</h3><p>Friendly competition, unforgettable moments.</p></div><span class="event-tag">TOURNAMENT FORMAT</span></article>
+          <article class="event-row"><div class="event-index">03</div><div class="event-kind">ANYTIME / RPG</div><div class="event-title"><h3>RAID & RECHARGE</h3><p>Find a party and tackle your next adventure.</p></div><span class="event-tag">GROUP FINDER CONCEPT</span></article>
+        </div>
+      </section>
+
+      <section class="section faq-section wrap" id="faq" aria-labelledby="faq-heading">
+        <div class="section-head"><p class="section-label">04 / QUESTIONS</p><h2 id="faq-heading">GOOD TO <em>KNOW.</em></h2></div>
+        <div class="faq-list">
+          <details><summary>Is Nexus Guild a real, active gaming community?<span aria-hidden="true">+</span></summary><p>No. This is a fictional portfolio demonstration showing what a custom gaming landing page could look like. The interface and controls are functional, but there is no live Discord server or registration backend.</p></details>
+          <details><summary>Does the join form submit my information?<span aria-hidden="true">+</span></summary><p>No. The form is a front-end demonstration only. It validates required fields and displays a confirmation explaining that nothing was sent or stored.</p></details>
+          <details><summary>Can a site like this be customized for a real group?<span aria-hidden="true">+</span></summary><p>Yes. Branding, copy, sections and links can be customized for a real client. Live membership forms, user accounts, event scheduling and integrations require additional development.</p></details>
+        </div>
+      </section>
+
+      <section class="cta-section"><div class="wrap cta-inner"><div><p class="section-label">THE NEXT CHAPTER STARTS HERE</p><h2>YOUR PEOPLE<br/>ARE <em>OUT THERE.</em></h2><p>Every legend starts with a first hello.</p></div><button class="button button-light" type="button" data-open-join>Explore the demo form <span aria-hidden="true">↗</span></button><div class="cta-emblem" aria-hidden="true">✦</div></div></section>
+    </main>
+
+    <footer class="site-footer"><div class="wrap footer-top"><a href="#top" class="brand"><span class="brand-icon" aria-hidden="true">✦</span><span>NEXUS<span class="brand-cut">/</span>GUILD</span></a><p>FICTIONAL CONCEPT · PORTFOLIO PROJECT</p><a href="#top" class="back-to-top">BACK TO TOP ↑</a></div><div class="wrap footer-bottom"><span>© <span id="year">2026</span> NEXUS GUILD DEMO</span><span>DESIGNED & CODED AS A PORTFOLIO EXAMPLE</span></div></footer>
+  </div>
+
+  <dialog id="join-dialog" aria-labelledby="join-title">
+    <div class="dialog-inner">
+      <button class="dialog-close" type="button" data-close-join aria-label="Close form">×</button>
+      <p class="section-label">DEMO / JOIN FORM</p>
+      <h2 id="join-title">FIND YOUR <em>CREW.</em></h2>
+      <p class="dialog-desc">Try the interface. This is a fictional demonstration—no information will be submitted or stored.</p>
+      <form id="join-form">
+        <label for="gamer-tag">Gaming nickname</label><input id="gamer-tag" name="tag" type="text" minlength="2" maxlength="28" autocomplete="off" required placeholder="Your gamer tag" />
+        <label for="playstyle">Your playstyle</label><select id="playstyle" name="playstyle" required><option value="">Choose your vibe</option><option>RPG & fantasy</option><option>Competitive</option><option>Casual & co-op</option><option>Creative & sandbox</option></select>
+        <button class="button button-primary submit-button" type="submit">Preview joining <span aria-hidden="true">↗</span></button>
+      </form>
+      <p id="join-result" class="join-result" role="status" aria-live="polite" hidden></p>
+      <p class="dialog-notice">DEMO ONLY — NO BACKEND / NO DATA COLLECTION</p>
+    </div>
+  </dialog>
+</body>
+</html>
